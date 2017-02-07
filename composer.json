@@ -1,0 +1,13 @@
+{
+    "name": "someproject",
+    "require": {
+        "silex/silex": "^2.0",
+        "twig/twig": "^2.1"
+    },
+    "authors": [
+        {
+            "name": "Erik Vanderlei Fernandes",
+            "email": "erik.vanderlei.programador@outlook.com"
+        }
+    ]
+}
