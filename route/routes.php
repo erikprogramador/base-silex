@@ -1,5 +1,9 @@
 <?php
 
+use App\User;
+
 $app->get('/', function () use ($app) {
-    return $app['twig']->render('index.twig');
+    $user = new User('Your username');
+    $username = $user->getUsername();
+    return $app['twig']->render('index.twig', compact('username'));
 });
