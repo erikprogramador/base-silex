@@ -1,0 +1,25 @@
+{
+  "name": "silex-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikprogramador/base-silex.git"
+  },
+  "author": "Erik Vanderlei Fernandes <erik.vanderlei.programador@outlook.com> (http://erikprogramador.com.br)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikprogramador/base-silex/issues"
+  },
+  "homepage": "https://github.com/erikprogramador/base-silex#readme",
+  "dependencies": {
+    "laravel-mix": "^0.7.5"
+  }
+}
