@@ -1,6 +1,49 @@
 {% extends 'layouts/app.twig' %}
 
 {% block content %}
-    <h1>Hello {{ username }}</h1>
-    <a href="{{ path('home') }}">Home</a>
+    <section class="hero is-dark is-fullheight">
+        <div class="hero-head">
+            <header class="nav">
+                <div class="container">
+                    <div class="nav-left">
+                        <a href="http://erikprogramador.com.br" class="nav-item">
+                            ErikProgramador
+                        </a>
+                    </div>
+                    <span class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div class="nav-right nav-menu">
+                        <a href="{{ path('home') }}" class="nav-item is-active">
+                            Home
+                        </a>
+                        <a href="http://erikprogramador.com.br" class="nav-item">
+                            erikprogramador.com.br
+                        </a>
+                        <a href="https://salescity.com.br" class="nav-item">
+                            Sales City
+                        </a>
+                        <span class="nav-item">
+                            <a href="https://github.com/erikprogramador/base-silex" class="button is-success is-inverted">
+                                <span class="icon">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                                <span>Github</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">
+                    Silex Simple Boilerplate
+                </h1>
+            </div>
+        </div>
+    </section>
 {% endblock %}
